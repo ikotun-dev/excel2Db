@@ -15,7 +15,7 @@ def excel_to_database(excel_file):
     try :
         for row in sheet.iter_rows(min_row=2, values_only=True):  # Assuming headers are in row 1
             name = row[1]  # Column B (NAMES)
-            phone_number = row[2]  # Column C (PHONE-NUMBER)
+            phone_number = row[2]  # Column C (PHONE-NUMBER)pip i
             email_address = row[3]  # Column D (EMAIL-ADDRESS)
         
             DemoEngineer.objects.create(
