@@ -1,13 +1,13 @@
 import pandas as pd
 import os
 import openpyxl
-from nse.settings import DATABASES  # Replace with your project's settings module
+from nse.settings import DATABASES  # Replace with your project's app name , my projects app name is nse --> thats why i used nse 
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nse.settings")
 import django
 django.setup()
 
-from api.models import DemoEngineer
+from api.models import DemoEngineer #demo engineers can be replaced with your model's name 
 
 def excel_to_database(excel_file):
     wb = openpyxl.load_workbook(excel_file)
