@@ -17,7 +17,7 @@ def excel_to_database(excel_file):
             name = row[1]  # Column B (NAMES)
             phone_number = row[2]  # Column C (PHONE-NUMBER)pip i
             email_address = row[3]  # Column D (EMAIL-ADDRESS)
-        
+        #Tag columns to columns of your choice relating to your own model and use case 
             DemoEngineer.objects.create(
             name=name,
             phone_number=phone_number,
